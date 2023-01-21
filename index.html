@@ -21,13 +21,52 @@
             extend: {
                 fontFamily: {
                     "manrope": "'Manrope' , sans-serif",
+                },
+                colors: {
+                    "dark-1": "#1C1C1C",
+                    "gradient-1": "#FF0000",
+                    "gradient-2": "#FF8938"
+                },
+                lineHeight: {
+                    headLine: "100px"
                 }
             }
           }
         }
       </script>
+       <style type="text/tailwindcss">
+        @layer utilities {
+          body {
+            font-family: "Manrope", sans-serif;
+          }
+        }
+      </style>
       <!-- tea styles -->
       <link rel="stylesheet" href="./assets/styles/styles.css">
   </head>
-  <body></body>
+  <body>
+    <!-- header start -->
+    <header class="mt-16 mb-40">
+        <div class="container mx-auto px-4 ">
+            <div class="header md:flex items-center md:gap-4">
+                <div class="header-content md:w-1/2 mb-16 md:mb-0">
+                    <h1 class="font-extrabold text-5xl md:text-7xl text-dark-1 md:leading-headLine">It's good tea time at The Tea House</h1>
+                    <p class="text-lg font-medium text-gray-400 my-8">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                    <button class="hero-btn p-5 flex justify-center items-center gap-3 rounded-xl text-white font-semibold leading-7 bg-gradient-to-tl from-gradient-1 to-gradient-2">Explore More <img src="./assets/images/arrow.png" alt="arrow"></button>
+                </div>
+                <div class="header-img md:w-1/2 relative">
+                    <img class="w-full " src="./assets/images/banner.png" alt="banner">
+                    <div class="rading-div py-5 px-7 shadow-lg rounded-xl flex  gap-4 absolute md:bottom-0 top-40 md:top-full z-10 bg-white md:left-44 ">
+                        <img src="./assets/images/star.svg" alt="star">
+                        <div>
+                            <p class="font-bold text-3xl">5.00</p>
+                            <p class="font-base font-semibold text-gray-400">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+  </body>
 </html>
