@@ -24,8 +24,11 @@
                 },
                 colors: {
                     "dark-1": "#1C1C1C",
+                    "dark-3": "#777777",
                     "gradient-1": "#FF0000",
-                    "gradient-2": "#FF8938"
+                    "gradient-2": "#FF8938",
+                    "tea-bg-1": "#F4F4F4",
+                    "tea-bg-2": "rgba(244, 244, 244, 0)"
                 },
                 lineHeight: {
                     headLine: "100px"
@@ -57,7 +60,7 @@
                 <div class="header-img md:w-1/2">
                     <div class="relative">
                         <img class="w-full " src="./assets/images/banner.png" alt="banner">
-                    <div class="rating-div py-3 sm:py-5 px-5 sm:px-7 shadow-lg rounded-xl flex  gap-4 absolute bottom-0 z-10 bg-white md:left-44 sm:left-10">
+                    <div class="rating-div py-3 sm:py-5 px-5 sm:px-7 shadow-lg rounded-xl flex  gap-4 absolute bottom-0 z-10 bg-white lg:left-44 sm:left-10">
                         <img src="./assets/images/star.svg" alt="star">
                         <div>
                             <p class="font-bold text-2xl md:text-3xl">5.00</p>
@@ -70,5 +73,39 @@
         </div>
     </header>
     <!-- header end -->
+    <!-- main section -->
+    <main>
+      <section class="featured-section">
+        <div class="container mx-auto px-4">
+          <div class="text-center">
+            <h2 class="font-extrabold text-5xl">Our Featured Product</h2>
+            <p class="font-medium text-base mt-5 mb-12 text-dark-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, <br> by injected humour, or randomised words which don't look even slightly believable. </p>
+          </div>
+          <div class="products grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-5 content-center mb-32">
+            <div class="product text-center shadow-lg rounded-xl p-7 bg-gradient-to-b from-tea-bg-1 to-tea-bg-2">
+                <img class="mx-auto" src="./assets/images/tea-1.png" alt="tea">
+              <h3 class="font-extrabold text-2xl mt-7 mb-3 capitalize">milk Tea</h3>
+              <p class="font-semibold text-base text-dark-3">Creamer could be replaced by fresh milk</p>
+            </div>
+            <div class="product text-center shadow-lg rounded-xl p-7 bg-gradient-to-b from-tea-bg-1 to-tea-bg-2">
+                <img class="mx-auto" src="./assets/images/tea-2.png" alt="tea">
+              <h3 class="font-extrabold text-2xl mt-7 mb-3 capitalize">Black Tea</h3>
+              <p class="font-semibold text-base text-dark-3">Creamer could be replaced by fresh milk</p>
+            </div>
+            <div class="product text-center shadow-lg rounded-xl p-7 bg-gradient-to-b from-tea-bg-1 to-tea-bg-2">
+                <img class="mx-auto" src="./assets/images/tea-3.png" alt="tea">
+              <h3 class="font-extrabold text-2xl mt-7 mb-3 capitalize">Lemon Tea</h3>
+              <p class="font-semibold text-base text-dark-3">Creamer could be replaced by fresh milk</p>
+            </div>
+            <div class="product text-center shadow-lg rounded-xl p-7 bg-gradient-to-b from-tea-bg-1 to-tea-bg-2">
+                <img class="mx-auto" src="./assets/images/tea-4.png" alt="tea">
+              <h3 class="font-extrabold text-2xl mt-7 mb-3 capitalize">green Tea</h3>
+              <p class="font-semibold text-base text-dark-3">Creamer could be replaced by fresh milk</p>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
